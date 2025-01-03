@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "question": "What is the capital of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo"],
+      "answer": "Tokyo"
+    },
+    {
+      "id": 2,
+      "question": "The Eiffel Tower is located in which city?",
+      "options": ["Berlin", "Paris", "London"],
+      "answer": "Paris"
+    },
+    {
+      "id": 3,
+      "question": "Which is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze"],
+      "answer": "Amazon"
+    },
+    {
+      "id": 4,
+      "question": "Who invented the telephone?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla"],
+      "answer": "Alexander Graham Bell"
+    },
+    {
+      "id": 5,
+      "question": "The Mona Lisa was painted by which artist?",
+      "options": ["Picasso", "Van Gogh", "Da Vinci"],
+      "answer": "Da Vinci"
+    },
+    {
+      "id": 6,
+      "question": "What is the square root of 81?",
+      "options": ["9", "10", "8"],
+      "answer": "9"
+    },
+    {
+      "id": 7,
+      "question": "What is the tallest building in the world?",
+      "options": ["Burj Khalifa", "Empire State Building", "Eiffel Tower"],
+      "answer": "Burj Khalifa"
+    },
+    {
+      "id": 8,
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": ["Oxygen", "Osmium", "Ozone"],
+      "answer": "Oxygen"
+    },
+    {
+      "id": 9,
+      "question": "What is the largest planet in the solar system?",
+      "options": ["Earth", "Mars", "Jupiter"],
+      "answer": "Jupiter"
+    },
+    {
+      "id": 10,
+      "question": "Who was the first person to step on the moon?",
+      "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin"],
+      "answer": "Neil Armstrong"
+    }
+  ]  
