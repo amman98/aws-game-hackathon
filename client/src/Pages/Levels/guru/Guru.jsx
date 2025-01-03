@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../../CommonComponents/Navbar'
 
-const Basic = () => {
+const Guru = () => {
   return (
     <div>
-      <Navbar/>
-      basic
+        <Navbar/>
+        Guru
     </div>
   )
 }
 
-export default Basic
+export default Guru

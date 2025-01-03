@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const PlayAGameCompo = () => {
+  const navigate = useNavigate();
+
   const levels = [
     {
       title: '🔥 Basic',
+      path: '/play-a-game/basic',
       rules: [
         '⚡ Rule 1: Stay in game',
         '💎 Rule 2: Collect points',
@@ -14,6 +18,7 @@ const PlayAGameCompo = () => {
     },
     {
       title: '⚡ Master',
+      path: '/play-a-game/master',
       rules: [
         '🚀 Rule 1: Increase speed',
         '💰 Rule 2: Double points',
@@ -25,7 +30,8 @@ const PlayAGameCompo = () => {
       ],
     },
     {
-      title: '👑 Pro',
+      title: '👑 Guru',
+      path: '/play-a-game/guru',
       rules: [
         '⚡ Rule 1: Ultra speed',
         '❌ Rule 2: No checkpoints',
@@ -40,6 +46,10 @@ const PlayAGameCompo = () => {
       ],
     }
   ];
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  }
 
   return (
     <div className='min-h-screen flex flex-col justify-center py-10 items-center bg-gradient-to-r from-yellow-300 to-orange-400'>
@@ -57,7 +67,7 @@ const PlayAGameCompo = () => {
               ))}
             </ul>
             <div className='flex justify-center mt-6'>
-              <button className='bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300'>
+              <button onClick={()=>handleNavigate(level.path)} className='bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300'>
                 🎮 Play Now
               </button>
             </div>
