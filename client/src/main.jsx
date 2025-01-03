@@ -1,20 +1,34 @@
-import React from 'react';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 import './index.css'
-import { createRoot } from 'react-dom/client';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './Pages/Home';
-import Leaderboard from './pages/Leaderboard';
-import PlayAGame from './Pages/PlayAGame';
-import ReportAProblem from './Pages/ReportAProblem';
+import { ClerkProvider } from '@clerk/clerk-react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import Leaderboard from './Pages/Leaderboard.jsx'
+import PlayAGame from './Pages/PlayAGame.jsx'
+import ReportAProblem from './Pages/ReportAProblem.jsx'
+import Login from './Pages/Login.jsx'
 
-createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/leaderboard" element={<Leaderboard/>} />
-        <Route path="/play-a-game" element={<PlayAGame />} />
-        <Route path="/report-a-problem" element={<ReportAProblem />} />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
-      </Routes>
-    </BrowserRouter>
-);
+// Import your Publishable Key
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/leaderboard' element={<Leaderboard/>} />
+          <Route path='/play-a-game' element={<PlayAGame/>} />
+          <Route path='/report-a-problem' element={<ReportAProblem/>} />
+        </Routes>
+      </BrowserRouter>
+    </ClerkProvider>
+  </React.StrictMode>,
+)

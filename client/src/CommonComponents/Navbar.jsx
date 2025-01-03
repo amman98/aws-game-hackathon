@@ -1,18 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { UserButton, useUser } from '@clerk/clerk-react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { isSignedIn } = useUser();
 
   return (
     <div className='flex justify-between items-center bg-yellow-500 py-2 px-5 relative'>
       
       {/* Hamburger Icon - Shows below 640px */}
       <div className="sm:hidden flex items-center">
-        <button onClick={() => {
-          setMenuOpen(!menuOpen);
-          console.log(menuOpen);  // Debugging: Check if state is toggling
-        }}>
+        <button onClick={() => setMenuOpen(!menuOpen)}>
           <div className="w-6 h-0.5 bg-black mb-1"></div>
           <div className="w-6 h-0.5 bg-black mb-1"></div>
           <div className="w-6 h-0.5 bg-black"></div>
@@ -35,10 +34,19 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Circle Div (Always Visible) */}
-      <div className="bg-yellow-700 p-6 rounded-full"></div>
+      {/* User Profile or Sign-In */}
+      <div className="flex items-center">
+        {isSignedIn ? (
+            <UserButton afterSignOutUrl="/login" />
+        ) : (
+          <Link to="/login" className="font-bold hover:text-white">
+            Sign In
+          </Link>
+        )}
+      </div>
+
     </div>
-  )
+  );
 }
 
 export default Navbar;
