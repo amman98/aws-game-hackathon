@@ -1,62 +1,62 @@
 [
-    {
-      "id": 1,
-      "question": "The square root of 16 is 4.",
-      "options": ["3", "4", "5"],
-      "answer": "4"
-    },
-    {
-      "id": 2,
-      "question": "The tallest mountain on Earth is Mount Everest.",
-      "options": ["K2", "Mount Everest", "Kangchenjunga"],
-      "answer": "Mount Everest"
-    },
-    {
-      "id": 3,
-      "question": "What is the formula for water?",
-      "options": ["H2O", "CO2", "O2"],
-      "answer": "H2O"
-    },
-    {
-      "id": 4,
-      "question": "What is the hardest known natural material?",
-      "options": ["Diamond", "Gold", "Iron"],
-      "answer": "Diamond"
-    },
-    {
-      "id": 5,
-      "question": "What is the largest land animal?",
-      "options": ["Elephant", "Giraffe", "Rhino"],
-      "answer": "Elephant"
-    },
-    {
-      "id": 6,
-      "question": "The Great Wall of China was built to protect against which group?",
-      "options": ["Mongols", "Romans", "Persians"],
-      "answer": "Mongols"
-    },
-    {
-      "id": 7,
-      "question": "In which year did the Titanic sink?",
-      "options": ["1912", "1911", "1909"],
-      "answer": "1912"
-    },
-    {
-      "id": 8,
-      "question": "What is the hardest rock?",
-      "options": ["Diamond", "Ruby", "Emerald"],
-      "answer": "Diamond"
-    },
-    {
-      "id": 9,
-      "question": "What is the largest ocean on Earth?",
-      "options": ["Pacific", "Atlantic", "Indian"],
-      "answer": "Pacific"
-    },
-    {
-      "id": 10,
-      "question": "Who was the first president of the United States?",
-      "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson"],
-      "answer": "George Washington"
-    }
-  ]  
+  {
+    "id": 1,
+    "question": "pu_lic",
+    "options": ["B", "O", "P"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "al_oha",
+    "options": ["B", "H", "O"],
+    "answer": "H"
+  },
+  {
+    "id": 3,
+    "question": "b_nana",
+    "options": ["O", "A", "E"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "g_ra_ce",
+    "options": ["A", "I", "E"],
+    "answer": "I"
+  },
+  {
+    "id": 5,
+    "question": "ca_e",
+    "options": ["B", "F", "T"],
+    "answer": "T"
+  },
+  {
+    "id": 6,
+    "question": "t_chnology",
+    "options": ["C", "E", "L"],
+    "answer": "E"
+  },
+  {
+    "id": 7,
+    "question": "s_pport",
+    "options": ["E", "U", "T"],
+    "answer": "U"
+  },
+  {
+    "id": 8,
+    "question": "fam_ly",
+    "options": ["I", "A", "M"],
+    "answer": "I"
+  },
+  {
+    "id": 9,
+    "question": "comp_ter",
+    "options": ["A", "U", "I"],
+    "answer": "U"
+  },
+  {
+    "id": 10,
+    "question": "com_unity",
+    "options": ["A", "T", "M"],
+    "answer": "M"
+  }
+]

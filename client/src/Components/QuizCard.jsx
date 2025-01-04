@@ -1,12 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const QuizCard = ({ quiz }) => {
+const QuizCard = ({ quiz, onCorrectAnswer }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
+  const [countdown, setCountdown] = useState(null);
+  const [lockSelection, setLockSelection] = useState(false);  // Control button locking
 
   const handleSelect = (option) => {
+    if (lockSelection) return; // Prevent selection after correct answer
+    
     setSelectedOption(option);
-    setIsCorrect(option === quiz.answer);
+    const correct = option === quiz.answer;
+    setIsCorrect(correct);
+
+    if (correct) {
+      setLockSelection(true);  // Lock selection after correct answer
+      setCountdown(3);
+      let timer = 3;
+
+      const interval = setInterval(() => {
+        timer--;
+        setCountdown(timer);
+        if (timer === 0) {
+          clearInterval(interval);
+          onCorrectAnswer();  // Trigger to move to next quiz
+          setLockSelection(false);  // Unlock for next quiz
+        }
+      }, 1000);
+    }
   };
 
   return (
@@ -18,21 +39,32 @@ const QuizCard = ({ quiz }) => {
             key={index}
             onClick={() => handleSelect(option)}
             className={`w-full p-3 rounded-md 
-              ${selectedOption
-                ? option === quiz.answer
-                  ? 'bg-green-500 text-white'
-                  : 'bg-red-500 text-white'
-                : 'bg-gray-200 hover:bg-blue-300'}
+              ${
+                selectedOption
+                  ? option === quiz.answer
+                    ? isCorrect && selectedOption === option
+                      ? 'bg-green-500 text-white'
+                      : selectedOption === option
+                      ? 'bg-red-500 text-white'
+                      : 'bg-gray-200'
+                    : 'bg-gray-200'
+                  : 'bg-gray-200 hover:bg-blue-300'
+              }
               transition-all`}
           >
             {option}
           </button>
         ))}
       </div>
+      
       {selectedOption && (
         <p className={`mt-4 font-bold ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
           {isCorrect ? 'Correct!' : 'Wrong Answer'}
         </p>
+      )}
+      
+      {countdown !== null && (
+        <p className='mt-2 text-sm text-gray-500'>Next quiz in {countdown}...</p>
       )}
     </div>
   );

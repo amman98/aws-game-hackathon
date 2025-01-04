@@ -1,32 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../../CommonComponents/Navbar';
-import QuizCard from '../../../Components/QuizCard.jsx'; // Assuming this component is used to render each quiz
+import QuizCard from '../../../Components/QuizCard.jsx';
 
 const Master = () => {
   const [quizzes, setQuizzes] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    // Fetch the basic.json file
-    fetch('/src/Pages/Levels/master/Master.json') // Ensure the correct path to basic.json
+    fetch('/src/Pages/Levels/master/Master.json')
       .then((res) => res.json())
       .then((data) => setQuizzes(data))
       .catch((err) => console.error('Failed to load quizzes:', err));
   }, []);
 
+  const handleNextQuiz = () => {
+    if (currentIndex < quizzes.length - 1) {
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }, 2000); // Delay for 2 seconds
+    }
+  };
+
   return (
     <>
       <Navbar />
-      <div className='min-h-screen bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 py-10'>
+      <div className='min-h-screen bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 py-10 relative'>
+        <div className='absolute top-5 right-10 text-2xl text-white font-semibold'>
+          {quizzes.length > 0 && (
+            <span>{currentIndex + 1}/{quizzes.length}</span>
+          )}
+        </div>
         <div className='text-center text-white mb-10'>
           <h1 className='text-5xl font-extrabold'>🔥 Master Level Quizzes</h1>
           <p className='text-lg mt-4'>Answer the quizzes below and score points!</p>
         </div>
 
-        <div className='flex flex-wrap justify-center gap-10 px-4'>
-          {/* Map through the quizzes from basic.json */}
-          {quizzes.map((quiz) => (
-            <QuizCard key={quiz.id} quiz={quiz} /> // Assuming QuizCard component is responsible for rendering each quiz
-          ))}
+        <div className='flex justify-center'>
+          {quizzes.length > 0 && (
+            <QuizCard
+              quiz={quizzes[currentIndex]}
+              onCorrectAnswer={handleNextQuiz}  // Pass function to QuizCard
+            />
+          )}
         </div>
       </div>
     </>

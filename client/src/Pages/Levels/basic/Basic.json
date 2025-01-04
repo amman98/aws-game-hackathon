@@ -1,62 +1,62 @@
 [
     {
       "id": 1,
-      "question": "What is the capital of France?",
-      "options": ["Berlin", "Paris", "Madrid"],
-      "answer": "Paris"
+      "question": "ho_ey",
+      "options": ["A", "N", "B"],
+      "answer": "N"
     },
     {
       "id": 2,
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Earth", "Mars", "Jupiter"],
-      "answer": "Mars"
+      "question": "c_t",
+      "options": ["A", "U", "I"],
+      "answer": "A"
     },
     {
       "id": 3,
-      "question": "What is the square root of 64?",
-      "options": ["6", "7", "8"],
-      "answer": "8"
+      "question": "su_",
+      "options": ["P", "N", "M"],
+      "answer": "N"
     },
     {
       "id": 4,
-      "question": "How many continents are there on Earth?",
-      "options": ["5", "6", "7"],
-      "answer": "7"
+      "question": "pl_nt",
+      "options": ["A", "E", "O"],
+      "answer": "A"
     },
     {
       "id": 5,
-      "question": "Which ocean is the largest on Earth?",
-      "options": ["Pacific", "Atlantic", "Indian"],
-      "answer": "Pacific"
+      "question": "dr_m",
+      "options": ["I", "A", "E"],
+      "answer": "E"
     },
     {
       "id": 6,
-      "question": "What is the largest country in the world by area?",
-      "options": ["USA", "Russia", "Canada"],
-      "answer": "Russia"
+      "question": "f_ox",
+      "options": ["I", "L", "R"],
+      "answer": "R"
     },
     {
       "id": 7,
-      "question": "Which is the smallest continent by area?",
-      "options": ["Asia", "Australia", "Africa"],
-      "answer": "Australia"
+      "question": "bo_k",
+      "options": ["A", "O", "U"],
+      "answer": "O"
     },
     {
       "id": 8,
-      "question": "Which country has the most population?",
-      "options": ["China", "India", "USA"],
-      "answer": "China"
+      "question": "st_r",
+      "options": ["A", "O", "E"],
+      "answer": "A"
     },
     {
       "id": 9,
-      "question": "Which animal is known as the King of the Jungle?",
-      "options": ["Lion", "Tiger", "Elephant"],
-      "answer": "Lion"
+      "question": "cl_wn",
+      "options": ["A", "O", "I"],
+      "answer": "O"
     },
     {
       "id": 10,
-      "question": "What is the fastest land animal?",
-      "options": ["Cheetah", "Lion", "Horse"],
-      "answer": "Cheetah"
+      "question": "fr_g",
+      "options": ["A", "O", "I"],
+      "answer": "O"
     }
-  ]  
+]
