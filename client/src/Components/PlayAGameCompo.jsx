@@ -1,9 +1,12 @@
+import { useUser } from '@clerk/clerk-react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const PlayAGameCompo = () => {
   const navigate = useNavigate();
-
+  const { isSignedIn } = useUser();
+  
   const levels = [
     {
       title: '🔥 Basic',
@@ -49,11 +52,18 @@ const PlayAGameCompo = () => {
 
   const handleNavigate = (path) => {
     navigate(path);
-  }
+  };
 
   return (
     <div className='min-h-screen flex flex-col justify-center py-10 items-center bg-gradient-to-r from-yellow-300 to-orange-400'>
-      <h1 className='text-5xl font-extrabold mb-12 text-white text-center drop-shadow-lg'>🎮 Choose Your Level</h1>
+      {!isSignedIn && (
+        <div className='text-xl font-bold text-red-600 mb-6'>
+          🚨 Please log in to play the game!
+        </div>
+      )}
+      <h1 className='text-5xl font-extrabold mb-12 text-white text-center drop-shadow-lg'>
+        🎮 Choose Your Level
+      </h1>
       <div className='flex flex-wrap gap-10 justify-center'>
         {levels.map((level, index) => (
           <div 
@@ -67,7 +77,11 @@ const PlayAGameCompo = () => {
               ))}
             </ul>
             <div className='flex justify-center mt-6'>
-              <button onClick={()=>handleNavigate(level.path)} className='bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300'>
+              <button 
+                onClick={() => handleNavigate(level.path)}
+                disabled={!isSignedIn}
+                className={`bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ${!isSignedIn ? 'cursor-not-allowed opacity-50' : ''}`}
+              >
                 🎮 Play Now
               </button>
             </div>
