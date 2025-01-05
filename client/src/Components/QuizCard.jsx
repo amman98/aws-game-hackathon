@@ -1,33 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const QuizCard = ({ quiz, onCorrectAnswer }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [countdown, setCountdown] = useState(null);
-  const [lockSelection, setLockSelection] = useState(false);  // Control button locking
+  const [lockSelection, setLockSelection] = useState(false);
 
   const handleSelect = (option) => {
-    if (lockSelection) return; // Prevent selection after correct answer
-    
+    if (lockSelection) return;
+
     setSelectedOption(option);
     const correct = option === quiz.answer;
     setIsCorrect(correct);
+    setLockSelection(true);
+    setCountdown(3);
 
-    if (correct) {
-      setLockSelection(true);  // Lock selection after correct answer
-      setCountdown(3);
-      let timer = 3;
+    let timer = 3;
+    const interval = setInterval(() => {
+      timer--;
+      setCountdown(timer);
+      if (timer === 0) {
+        clearInterval(interval);
+        onCorrectAnswer(correct);  // Pass correctness to parent component
+        resetState();
+      }
+    }, 1000);
+  };
 
-      const interval = setInterval(() => {
-        timer--;
-        setCountdown(timer);
-        if (timer === 0) {
-          clearInterval(interval);
-          onCorrectAnswer();  // Trigger to move to next quiz
-          setLockSelection(false);  // Unlock for next quiz
-        }
-      }, 1000);
-    }
+  const resetState = () => {
+    setSelectedOption(null);
+    setIsCorrect(null);
+    setCountdown(null);
+    setLockSelection(false);
   };
 
   return (
@@ -51,6 +55,7 @@ const QuizCard = ({ quiz, onCorrectAnswer }) => {
                   : 'bg-gray-200 hover:bg-blue-300'
               }
               transition-all`}
+            disabled={lockSelection}
           >
             {option}
           </button>
