@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../../../CommonComponents/Navbar';
 import QuizCard from '../../../Components/QuizCard.jsx';
+import axios from 'axios';
 
 const Master = () => {
   const [quizzes, setQuizzes] = useState([]);
@@ -17,18 +18,17 @@ const Master = () => {
   }, []);
 
   const handleNextQuiz = () => {
-    if (currentIndex < quizzes.length - 1) {
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      }, 2000);  // Delay for the next quiz
-    } else {
-      // Show buttons after the last quiz
-      setTimeout(() => {
-        setCurrentIndex(quizzes.length);  // Move index out of bounds to trigger buttons
-      }, 3000);
-    }
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+    // if (currentIndex < quizzes.length - 1) {
+    //   setTimeout(() => {
+    //   }, 5000);  // Delay for the next quiz
+    // } else {
+    //   // Show buttons after the last quiz
+    //   setCurrentIndex(quizzes.length);  // Move index out of bounds to trigger buttons
+    //     setTimeout(() => {
+    //   }, 3000);
+    // }
   };
-
 
   const handleCorrectAnswer = (isCorrect) => {
     if (isCorrect) {
@@ -43,7 +43,19 @@ const Master = () => {
   };
 
   const handleSubmit = () => {
-    navigate('/leaderboard');  // Redirect to leaderboard
+    const userId = localStorage.getItem('userId');
+
+    axios.put(`http://localhost:3001/${userId}`, {
+      score: score
+    })
+      .then(response => {
+        console.log('Score updated:', response.data);
+        navigate('/leaderboard');  // Redirect to leaderboard
+      })
+      .catch(error => {
+        console.error('Error updating score:', error);
+      });
+
   };
 
   return (

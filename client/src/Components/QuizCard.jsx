@@ -13,9 +13,9 @@ const QuizCard = ({ quiz, onCorrectAnswer }) => {
     const correct = option === quiz.answer;
     setIsCorrect(correct);
     setLockSelection(true);
-    setCountdown(3);
-
     let timer = 3;
+    setCountdown(timer);
+
     const interval = setInterval(() => {
       timer--;
       setCountdown(timer);
@@ -24,7 +24,7 @@ const QuizCard = ({ quiz, onCorrectAnswer }) => {
         onCorrectAnswer(correct);  // Pass correctness to parent component
         resetState();
       }
-    }, 1000);
+    }, 800);
   };
 
   const resetState = () => {
