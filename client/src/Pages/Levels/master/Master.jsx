@@ -65,7 +65,12 @@ const Master = () => {
         <div className='absolute top-5 right-10 text-2xl text-white font-semibold'>
           {quizzes.length > 0 && (
             <>
-              <span>{currentIndex + 1}/{quizzes.length}</span>
+              <span>
+                {currentIndex >= quizzes.length 
+                  ? `${quizzes.length}/${quizzes.length}`
+                  : `${currentIndex + 1}/${quizzes.length}`
+                }
+              </span>
               <div className='text-lg mt-2'>Score: {score}</div>
             </>
           )}
