@@ -1,62 +1,62 @@
 [
     {
       "id": 1,
-      "question": "ho_ey",
-      "options": ["A", "N", "B"],
-      "answer": "N"
+      "question": "whis_er",
+      "options": ["T", "P", "F"],
+      "answer": "P"
     },
     {
       "id": 2,
-      "question": "c_t",
-      "options": ["A", "U", "I"],
-      "answer": "A"
+      "question": "b_anket",
+      "options": ["O", "R", "L"],
+      "answer": "L"
     },
     {
       "id": 3,
-      "question": "su_",
-      "options": ["P", "N", "M"],
-      "answer": "N"
+      "question": "cr_stal",
+      "options": ["Y", "I", "O"],
+      "answer": "Y"
     },
     {
       "id": 4,
-      "question": "pl_nt",
-      "options": ["A", "E", "O"],
-      "answer": "A"
+      "question": "dolp_in",
+      "options": ["A", "F", "H"],
+      "answer": "H"
     },
     {
       "id": 5,
-      "question": "dr_m",
-      "options": ["I", "A", "E"],
-      "answer": "E"
+      "question": "thun_er",
+      "options": ["D", "P", "Y"],
+      "answer": "D"
     },
     {
       "id": 6,
-      "question": "f_ox",
-      "options": ["I", "L", "R"],
-      "answer": "R"
+      "question": "_inea__le",
+      "options": ["K", "P", "R"],
+      "answer": "P"
     },
     {
       "id": 7,
-      "question": "bo_k",
-      "options": ["A", "O", "U"],
-      "answer": "O"
+      "question": "m_ster_",
+      "options": ["I", "A", "Y"],
+      "answer": "Y"
     },
     {
       "id": 8,
-      "question": "st_r",
-      "options": ["A", "O", "E"],
-      "answer": "A"
+      "question": "r_p_tition",
+      "options": ["E", "U", "A"],
+      "answer": "E"
     },
     {
       "id": 9,
-      "question": "cl_wn",
-      "options": ["A", "O", "I"],
-      "answer": "O"
+      "question": "o__upation",
+      "options": ["S", "C", "L"],
+      "answer": "C"
     },
     {
       "id": 10,
-      "question": "fr_g",
-      "options": ["A", "O", "I"],
-      "answer": "O"
+      "question": "frie_dship",
+      "options": ["L", "O", "N"],
+      "answer": "N"
     }
 ]

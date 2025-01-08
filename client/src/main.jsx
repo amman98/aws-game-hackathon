@@ -9,7 +9,7 @@ import Leaderboard from './Pages/Leaderboard.jsx'
 import PlayAGame from './Pages/PlayAGame.jsx'
 import ReportAProblem from './Pages/ReportAProblem.jsx'
 import Login from './Pages/Login.jsx'
-import BasicLevel from './Pages/Levels/basic/Basic.jsx'
+import BasicLevel from './Pages/Levels/basic/basic.jsx'
 import MasterLevel from './Pages/Levels/master/Master.jsx'
 import GuruLevel from './Pages/Levels/guru/Guru.jsx'
 

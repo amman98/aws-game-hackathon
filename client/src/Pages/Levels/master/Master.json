@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "question": "cap_tal",
-    "options": ["I", "E", "A"],
-    "answer": "I"
+    "question": "a__reciation",
+    "options": ["P", "F", "X"],
+    "answer": "P"
   },
   {
     "id": 2,
-    "question": "tow_ring",
-    "options": ["E", "A", "O"],
-    "answer": "E"
+    "question": "misunderst__d",
+    "options": ["Y", "A", "O"],
+    "answer": "O"
   },
   {
     "id": 3,
-    "question": "riv_ers",
-    "options": ["V", "E", "R"],
-    "answer": "V"
+    "question": "_ransforma_ion",
+    "options": ["T", "C", "P"],
+    "answer": "T"
   },
   {
     "id": 4,
-    "question": "telepho_e",
-    "options": ["L", "N", "R"],
-    "answer": "N"
+    "question": "exa__eration",
+    "options": ["C", "G", "S"],
+    "answer": "G"
   },
   {
     "id": 5,
-    "question": "paint_ng",
-    "options": ["I", "E", "A"],
+    "question": "respons_b_l_ty",
+    "options": ["I", "U", "A"],
     "answer": "I"
   },
   {
     "id": 6,
-    "question": "squa_re",
-    "options": ["R", "T", "U"],
-    "answer": "R"
+    "question": "_ommuni_ation",
+    "options": ["C", "K", "D"],
+    "answer": "C"
   },
   {
     "id": 7,
-    "question": "buil_ing",
-    "options": ["D", "T", "S"],
-    "answer": "D"
+    "question": "revolutionar_",
+    "options": ["W", "S", "Y"],
+    "answer": "Y"
   },
   {
     "id": 8,
-    "question": "ele_ents",
-    "options": ["M", "L", "T"],
-    "answer": "M"
+    "question": "_ompli_ations",
+    "options": ["Q", "R", "C"],
+    "answer": "C"
   },
   {
     "id": 9,
-    "question": "plane_t",
-    "options": ["A", "E", "I"],
-    "answer": "A"
+    "question": "unbel_evab_l_ty",
+    "options": ["O", "W", "I"],
+    "answer": "I"
   },
   {
     "id": 10,
-    "question": "mo_nlit",
-    "options": ["O", "O", "A"],
-    "answer": "O"
+    "question": "e_traordinary",
+    "options": ["S", "X", "F"],
+    "answer": "X"
   }
 ]

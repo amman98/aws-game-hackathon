@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const PopUpCard = ({ onClose }) => {
   const [name, setName] = useState('');
@@ -9,6 +10,22 @@ const PopUpCard = ({ onClose }) => {
       setError(true);
       return;
     }
+
+    axios.post('http://localhost:3001', {
+      username: name  // This sends the name in the request body
+    })
+      .then((response) => {
+        if(response.data && response.data.id) {
+          localStorage.setItem('userId', response.data.id);
+          console.log(response.data);
+        } else {
+          console.error('No user ID received in response');
+        }
+      })
+      .catch((error) => {
+        console.error('Failed to post the data: ', error);
+      });
+
     localStorage.setItem('gameUserName', name);
     onClose();  // Close the popup
   };
