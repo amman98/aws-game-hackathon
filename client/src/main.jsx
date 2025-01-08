@@ -9,9 +9,10 @@ import Leaderboard from './Pages/Leaderboard.jsx'
 import PlayAGame from './Pages/PlayAGame.jsx'
 import ReportAProblem from './Pages/ReportAProblem.jsx'
 import Login from './Pages/Login.jsx'
-import BasicLevel from './Pages/Levels/basic/basic.jsx'
-import MasterLevel from './Pages/Levels/master/Master.jsx'
-import GuruLevel from './Pages/Levels/guru/Guru.jsx'
+// import BasicLevel from './Pages/Levels/basic/Basic.jsx'
+// import MasterLevel from './Pages/Levels/master/Master.jsx'
+// import GuruLevel from './Pages/Levels/guru/Guru.jsx'
+import StartAGame from './Pages/StartAGame.jsx'
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -29,9 +30,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/login' element={<Login/>} />
           <Route path='/leaderboard' element={<Leaderboard/>} />
           <Route path='/play-a-game' element={<PlayAGame/>} />
-          <Route path='/play-a-game/basic' element={<BasicLevel/>} />
+          <Route path='/play-a-game/:level' element={<StartAGame/>} />
+          {/* <Route path='/play-a-game/basic' element={<BasicLevel/>} />
           <Route path='/play-a-game/master' element={<MasterLevel/>} />
-          <Route path='/play-a-game/guru' element={<GuruLevel/>} />
+          <Route path='/play-a-game/guru' element={<GuruLevel/>} /> */}
           <Route path='/report-a-problem' element={<ReportAProblem/>} />
         </Routes>
       </BrowserRouter>

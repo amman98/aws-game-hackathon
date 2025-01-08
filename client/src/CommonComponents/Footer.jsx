@@ -19,9 +19,9 @@ const Footer = () => {
         <div className="w-full sm:w-1/4 mb-6 sm:mb-0">
           <h3 className="text-xl font-bold mb-4">Levels</h3>
           <ul className="space-y-2">
-            <li><a href="/basic" className="hover:text-yellow-400">Basic</a></li>
-            <li><a href="/master" className="hover:text-yellow-400">Master</a></li>
-            <li><a href="/guru" className="hover:text-yellow-400">Guru</a></li>
+            <li><a href="/play-a-game/basic" className="hover:text-yellow-400">Basic</a></li>
+            <li><a href="/play-a-game/master" className="hover:text-yellow-400">Master</a></li>
+            <li><a href="/play-a-game/guru" className="hover:text-yellow-400">Guru</a></li>
           </ul>
         </div>
 
