@@ -3,33 +3,33 @@ import React from 'react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'John Doe',
+      name: 'Amman Nega',
       country: 'USA',
       image: 'https://randomuser.me/api/portraits/men/1.jpg',
       rating: 5,
-      review: "This game is absolutely amazing! I couldn't stop playing. The levels are challenging and fun. I highly recommend it to anyone who loves word games!",
+      review: "This game is absolutely amazing! I have contributed in some frontend and backend tasks. The levels are challenging and fun. I highly recommend it to anyone who loves word games!",
     },
     {
-      name: 'Jane Smith',
-      country: 'Canada',
+      name: 'Muhammad Taha',
+      country: 'Pakistan',
       image: 'https://randomuser.me/api/portraits/women/2.jpg',
       rating: 4,
-      review: "Great game! The difficulty levels are well-balanced, and I love how I can improve my vocabulary while having fun. I would give it a 5 if there were more levels!",
+      review: "Great game! I have contributed in the frontend whole and to connect the frontend and backend functionality. The difficulty levels are well-balanced, and I love how I can improve my vocabulary while having fun. I would give it a 5 if there were more levels!",
     },
     {
-      name: 'Ali Hassan',
+      name: 'Noor Ul Hassan',
       country: 'Pakistan',
       image: 'https://randomuser.me/api/portraits/men/3.jpg',
       rating: 5,
-      review: "An excellent game to test your word skills. The Guru level is a real challenge, and I love it. It really makes you think and expand your vocabulary.",
+      review: "An excellent game. I have contributed in some frontend tasks and in research of AWS services. The Guru level is a real challenge, and I love it. It really makes you think and expand your vocabulary.",
     },
   ];
 
   return (
     <div className="bg-gray-100 py-16">
       <div className="max-w-screen-xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">What Players Are Saying</h2>
-        <p className="text-xl text-gray-600">Here’s what some of our players think about the game!</p>
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">What Developers Of This Are Saying</h2>
+        <p className="text-xl text-gray-600">Here’s what developers think about the game!</p>
       </div>
 
       {/* Use gap-10 to define a consistent gap between the cards */}
