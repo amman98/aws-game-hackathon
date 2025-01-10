@@ -24,11 +24,6 @@ const Footer = () => {
             <li><a href="/play-a-game/guru" className="hover:text-yellow-400">Guru</a></li>
           </ul>
         </div>
-
-        {/* Copyright Section */}
-        <div className="w-full sm:w-1/4 text-center sm:text-right">
-          <p className="text-sm opacity-70">© 2025 WordQuest. All Rights Reserved.</p>
-        </div>
       </div>
 
       {/* Bottom Line */}
