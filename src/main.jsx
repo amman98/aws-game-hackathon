@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -9,9 +8,6 @@ import Leaderboard from './Pages/Leaderboard.jsx'
 import PlayAGame from './Pages/PlayAGame.jsx'
 import ReportAProblem from './Pages/ReportAProblem.jsx'
 import Login from './Pages/Login.jsx'
-// import BasicLevel from './Pages/Levels/basic/Basic.jsx'
-// import MasterLevel from './Pages/Levels/master/Master.jsx'
-// import GuruLevel from './Pages/Levels/guru/Guru.jsx'
 import StartAGame from './Pages/StartAGame.jsx'
 
 // Import your Publishable Key
