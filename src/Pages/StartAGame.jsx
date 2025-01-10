@@ -6,9 +6,9 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 // Import quiz data
-import basicQuizData from '../Pages/Levels/Basic.json';
-import masterQuizData from '../Pages/Levels/Master.json';
-import guruQuizData from '../Pages/Levels/Guru.json';
+import basicQuizData from './Levels/Basic.json';
+import masterQuizData from './Levels/Master.json';
+import guruQuizData from './Levels/Guru.json';
 
 const StartAGame = () => {
   const { level } = useParams();

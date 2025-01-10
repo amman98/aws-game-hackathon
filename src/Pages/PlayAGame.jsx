@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../CommonComponents/Navbar'
-import PlayAGameCompo from '../Components/PlayAGameCompo'
+import Levels from '../Components/Levels'
 
 const PlayAGame = () => {
   return (
     <>
       <Navbar/>
-      <PlayAGameCompo/>
+      <Levels/>
     </>
   )
 }
