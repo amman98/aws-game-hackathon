@@ -1,9 +1,9 @@
 [
     {
       "id": 1,
-      "question": "whis_er",
-      "options": ["T", "P", "F"],
-      "answer": "P"
+      "question": "sma__",
+      "options": ["R", "L", "F"],
+      "answer": "L"
     },
     {
       "id": 2,
