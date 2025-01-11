@@ -6,7 +6,7 @@ const LeaderboardCompo = () => {
   const [playersData, setPlayersData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001')
+    axios.get('arn:aws:execute-api:us-west-2:605134434743:ss970w5kfh/*/GET/users')
       .then((response) => {
         setPlayersData(response.data)
       })
