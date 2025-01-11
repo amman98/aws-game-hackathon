@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "question": "sma__",
+      "options": ["R", "L", "F"],
+      "answer": "L"
+    },
+    {
+      "id": 2,
+      "question": "b_anket",
+      "options": ["O", "R", "L"],
+      "answer": "L"
+    },
+    {
+      "id": 3,
+      "question": "cr_stal",
+      "options": ["Y", "I", "O"],
+      "answer": "Y"
+    },
+    {
+      "id": 4,
+      "question": "dolp_in",
+      "options": ["A", "F", "H"],
+      "answer": "H"
+    },
+    {
+      "id": 5,
+      "question": "thun_er",
+      "options": ["D", "P", "Y"],
+      "answer": "D"
+    },
+    {
+      "id": 6,
+      "question": "_inea__le",
+      "options": ["K", "P", "R"],
+      "answer": "P"
+    },
+    {
+      "id": 7,
+      "question": "m_ster_",
+      "options": ["I", "A", "Y"],
+      "answer": "Y"
+    },
+    {
+      "id": 8,
+      "question": "r_p_tition",
+      "options": ["E", "U", "A"],
+      "answer": "E"
+    },
+    {
+      "id": 9,
+      "question": "o__upation",
+      "options": ["S", "C", "L"],
+      "answer": "C"
+    },
+    {
+      "id": 10,
+      "question": "frie_dship",
+      "options": ["L", "O", "N"],
+      "answer": "N"
+    }
+]

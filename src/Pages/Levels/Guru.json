@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "dis_ro_ortionately",
+    "options": ["V", "Q", "P"],
+    "answer": "P"
+  },
+  {
+    "id": 2,
+    "question": "co_nterprod_ctive",
+    "options": ["A", "U", "Y"],
+    "answer": "U"
+  },
+  {
+    "id": 3,
+    "question": "uncons_i_u_ionally",
+    "options": ["H", "T", "E"],
+    "answer": "T"
+  },
+  {
+    "id": 4,
+    "question": "_ntercont_nental",
+    "options": ["I", "U", "G"],
+    "answer": "I"
+  },
+  {
+    "id": 5,
+    "question": "misi_terpretatio_",
+    "options": ["N", "F", "L"],
+    "answer": "N"
+  },
+  {
+    "id": 6,
+    "question": "o_ergeneralization",
+    "options": ["K", "D", "V"],
+    "answer": "V"
+  },
+  {
+    "id": 7,
+    "question": "mis_hara_terization",
+    "options": ["G", "F", "C"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "anti_isestablishment",
+    "options": ["K", "D", "R"],
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "di_enfranchi_ement",
+    "options": ["K", "S", "W"],
+    "answer": "S"
+  },
+  {
+    "id": 10,
+    "question": "supercal_frag_l_st_c",
+    "options": ["I", "O", "Y"],
+    "answer": "I"
+  }
+]
