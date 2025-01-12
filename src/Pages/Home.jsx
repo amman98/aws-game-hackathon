@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../CommonComponents/Navbar';
-import HomeTopSection from '../Components/HomeTopSection';
+import HomeTopSection from '../components/HomeTopSection';
 import WhatGameIs from '../components/WhatGameIs';
 import Footer from '../CommonComponents/Footer';
 import { useUser } from '@clerk/clerk-react';
