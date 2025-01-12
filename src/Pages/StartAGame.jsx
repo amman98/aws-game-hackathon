@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Navbar from '../CommonComponents/Navbar';
-import QuizCard from '../Components/QuizCard';
+import QuizCard from '../components/QuizCard';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 

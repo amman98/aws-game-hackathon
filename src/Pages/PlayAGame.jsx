@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../CommonComponents/Navbar'
-import Levels from '../Components/Levels'
+import Levels from '../components/Levels'
 
 const PlayAGame = () => {
   return (
