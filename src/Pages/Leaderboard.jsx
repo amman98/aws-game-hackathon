@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../CommonComponents/Navbar';
-import LeaderboardCompo from '../Components/LeaderboardCompo';
+import LeaderboardCompo from '../components/LeaderboardCompo';
 
 const Leaderboard = () => {
   return (

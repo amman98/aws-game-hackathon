@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../CommonComponents/Navbar';
 import HomeTopSection from '../Components/HomeTopSection';
-import WhatGameIs from '../Components/WhatGameIs';
+import WhatGameIs from '../components/WhatGameIs';
 import Footer from '../CommonComponents/Footer';
 import { useUser } from '@clerk/clerk-react';
-import PopUpCard from '../Components/PopUpCard';
+import PopUpCard from '../components/PopUpCard';
 
 const Home = () => {
   const { isSignedIn } = useUser();

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../CommonComponents/Navbar'
-import ReportAProblemCompo from '../Components/ReportAProblemCompo'
+import ReportAProblemCompo from '../components/ReportAProblemCompo'
 
 const ReportAProblem = () => {
   return (
