@@ -1,4 +1,5 @@
 import React from 'react'
+import { ClerkProvider } from '@clerk/clerk-react';
 import { SignIn } from '@clerk/clerk-react'
 import Navbar from '../CommonComponents/Navbar'
 
