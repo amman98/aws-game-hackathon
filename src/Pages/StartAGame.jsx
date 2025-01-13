@@ -53,7 +53,7 @@ const StartAGame = () => {
   const handleSubmit = () => {
     const userId = localStorage.getItem('userId');
 
-    axios.put(`arn:aws:execute-api:us-west-2:605134434743:ss970w5kfh/*/PUT/users/${userId}`, {
+    axios.put(`http://localhost:3001/${userId}`, {
       score: score
     })
       .then(response => {
