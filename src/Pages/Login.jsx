@@ -5,10 +5,12 @@ import Navbar from '../CommonComponents/Navbar'
 const Login = () => {
   return (
     <>
-        <Navbar/>
+      <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}>
+        <Navbar />
         <div className="flex justify-center items-center min-h-screen">
-          <SignIn/>
+          <SignIn />
         </div>
+      </ClerkProvider>
     </>
   )
 }
