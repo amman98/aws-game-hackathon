@@ -53,6 +53,7 @@ const StartAGame = () => {
   const handleSubmit = () => {
     const userId = localStorage.getItem('userId');
 
+
     axios.put(`https://ss970w5kfh.execute-api.us-west-2.amazonaws.com/prod/users/${userId}`, {
       score: score
     })

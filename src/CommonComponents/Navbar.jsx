@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { UserButton, useUser } from '@clerk/clerk-react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { isSignedIn } = useUser();
 
   return (
     <div className='flex justify-between items-center bg-yellow-500 py-2 px-5 relative'>
@@ -33,18 +31,6 @@ const Navbar = () => {
           <h1 className='p-1 px-3 rounded-xl cursor-pointer font-bold hover:bg-yellow-900 hover:text-white transition'>Report</h1>
         </Link>
       </div>
-
-      {/* User Profile or Sign-In */}
-      <div className="flex items-center">
-        {isSignedIn ? (
-            <UserButton afterSignOutUrl="/login" />
-        ) : (
-          <Link to="/login" className="font-bold hover:text-white">
-            Sign In
-          </Link>
-        )}
-      </div>
-
     </div>
   );
 }
