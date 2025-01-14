@@ -13,7 +13,8 @@ const PopUpCard = ({ onClose }) => {
       return;
     }
 
-    axios.post('http://localhost:3001', {
+    
+    axios.post('https://ss970w5kfh.execute-api.us-west-2.amazonaws.com/prod/users', {
       username: name  // This sends the name in the request body
     })
       .then((response) => {
