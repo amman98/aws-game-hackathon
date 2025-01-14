@@ -3,19 +3,17 @@ import Navbar from '../CommonComponents/Navbar';
 import HomeTopSection from '../components/HomeTopSection';
 import WhatGameIs from '../components/WhatGameIs';
 import Footer from '../CommonComponents/Footer';
-import { useUser } from '@clerk/clerk-react';
 import PopUpCard from '../components/PopUpCard';
 
 const Home = () => {
-  const { isSignedIn } = useUser();
   const [showPopUp, setShowPopUp] = useState(false);
 
   useEffect(() => {
     const gameUserName = localStorage.getItem('gameUserName');
-    if (isSignedIn && !gameUserName) {
+    if (!gameUserName) {
       setShowPopUp(true);
     }
-  }, [isSignedIn]);
+  }, []);
 
   const handleClosePopUp = () => {
     setShowPopUp(false);
